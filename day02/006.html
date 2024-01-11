@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<!-- css로 문서 스타일 지정하기 -->
+    <style>
+        /* 선택자(selector) : css의 적용대상을 지정하는 방식 */
+        /* 
+            h1태그를 선택해 color속성을 빨강으로 지정하는 css
+        */
+        h1{
+            color:red;
+            text-align: center;
+        }
+        p{
+            color: orange;
+            text-align: center;
+            font-size: 5em; /* em은 100% 느낌  근데 이건 그거의 테두리도 같이 커진다 %는 개인행동함*/
+        }
+        #rainbow{
+            /* background-image: linear-gradient(45deg,  red, orange, yellow, green, blue, indigo, purple);    height: 150px; */
+            color :linear-gradient(45deg,  red, orange, yellow, green, blue, indigo, purple);
+        }
+
+    </style>
+</head>
+<body >
+    <h1 id="rainbow">제목입니다</h1>
+    <p id="rainbow">내용입니다</p>
+</body>
+</html>

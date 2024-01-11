@@ -1,0 +1,22 @@
+<!-- 웹 브라우저에게 문서의 종류와 버전을(DOCTYPE) 알려준다 -->
+<!DOCTYPE html>
+<!-- 태그의 부가 정보를 속성이라고 한다 html태그의 lang속성은 이문서를 작성한 언어를 지정한다 lang속성은 시각장애인을 위한속성 -> 웹접근성 -->
+
+<html lang="ko">
+<head>
+    <!-- utf-8이 한글설정이다 character set은 문자집합이라는 의미다 -->
+    <meta charset="UTF-8">
+    <!-- 휴대폰에서 웹사이트를 보기위해 화면을 확대, 축소하는 설정
+        요즘은 휴대폰이 발전해서 의미가 없다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- initial-scale=1.0 그래서 이거 1.0이다 핸드폰이 컴퓨터보다 더 좋아서 -->
+    <title>Document</title>
+</head>
+<body>
+    <p>HTML은 HyperText Markup Language의 약자</p>
+    <p>HyperText 는 링크걸린 문서를 말한다</p>
+    <a href="http://www.naver.com" target="_blank" title="네이버로">네이버로</a><!--_blank없으면 직접가고 있으면 새창 열어서 감 타이틀은 커서위에 올렸을때 도움말-->
+    <a href="http://www.naver.com"><img src="..\day01\강아지.webp"width="100px" alt="강아지"></a>
+    <!-- alt도 웹 접근성속성이다 남에게 보여줄때 있어야한다 -->
+    <!-- 이미지를 너비 100px로 출력하고 클릭시 네이버 이동 -->
+</body>
+</html>
