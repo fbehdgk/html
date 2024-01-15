@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 사이징 속성</title>
+    <style>
+        div{
+            border: 1px solid salmon; width: 100px;height: 100px;
+            text-align: center; line-height: 100px;
+        }
+        .content-box{padding: 20px;}
+        .border-box{padding: 20px; box-sizing: border-box;}
+        /* box-sizing: border-box; 이면 너비와 높이가 계산될때 패딩이 계산된다 */
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        C
+        <!-- 패딩, 보더가 너비,높이에 들어가지않는다 -->
+    </div>
+    <div class="border-box">
+        B
+        <!-- 패딩, 보더를 너비,높이에 포함 -->
+        <!-- 너비 높이가 같으면 패딩, 보더가 달라도 보이는 모양이 같다 결론은 기본값인 컨텐츠박스 말고 보더 박스 쓰자 -->
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

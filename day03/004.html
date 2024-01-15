@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid rebeccapurple; width: 100px;
+        }
+        span{
+            border: 1px solid royalblue; width: 100px;
+            border-radius: 100px;
+            padding: 10px;
+            text-align: center;
+            
+        /* 내용이 한줄일때 수직 가운데 = line-hight를 같게준다 */
+        }
+        div{ display: inline-block;
+            font-size: 0.8em;}
+        
+        div.red{
+            /* div중에 .레드가 걸린놈  ex div 클래스가 red*/
+            
+            color:violet
+        }
+        div .red{
+            /* 하위선택자 : div자식중에 .red가 걸린놈  div 클래스 안에 있는 요소의 클래스가 레드*/
+            text-decoration: underline;
+        }
+
+        
+        /* display: inline-block 너비가 적용되고 한줄에 여러개 배치가능 */
+    </style>
+</head>
+<body>
+    
+        <span>학원소개</span>
+        <span>교육과정</span>
+        <!-- div는 너비적용가능 --> 
+        <span>취업지원센터</span>
+        <span>고객센터</span>
+        <!-- 앤 너비 안됨 -->
+    
+</body>
+</html>

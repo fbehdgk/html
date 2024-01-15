@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0px;padding: 0px;
+            box-sizing: border-box;
+            /* box-sizing: border-box;: 높이와 너비를 계산할 때 border까지 계산해라 
+                기본값은 높이계산할떄 padding, border가 빠진다*/
+
+        }
+        .menu ol{
+            list-style: none;  
+        }
+        .menu ol li{
+            display: inline-block; 
+            /* 인라인블럭은 연습용 */
+            background-color: lawngreen;
+            color: white;
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+        }
+        .menu ol li:hover{
+            
+            border: 1px solid blue;
+            background-color: whitesmoke;
+            color : black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- 메뉴는 서로 관련된 요소의 집합이고 ul이나 ol을 보통 사용함 -->
+        <ol>
+            <li>학원소개</li>
+            <li>교육과정</li>
+            <li>취업지원센터</li>
+            <li>고객 센터</li>
+        </ol>
+    </div>
+</body>
+</html>

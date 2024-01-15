@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 사이징 속성</title>
+    <style>
+        *{
+            padding: 0px;margin: 0px;
+        }
+        .border-box{padding: 10px; box-sizing: border-box;}
+        /* box-sizing: border-box; 이면 너비와 높이가 계산될때 패딩이 계산된다 */
+        /* .red같은거 앞에 태그이름을 적으면 우선순위가 조금 높아진다 */
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        span{font-size: 40px;}
+        .big{
+            font-size: 60px;
+        }
+        .box{
+            border: 1px solid skyblue;
+            width: 500px;margin: 0 auto;
+            text-align: center;
+        }
+        .italic{font-style: italic;}
+        /* 이텔릭스타일 글씨 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div><span class="red big">우</span>리나라 좋은나라</div>
+        <div><span class="blue big italic">우</span>리나라 좋은나라</div>
+        <div><span class="blue big">우</span>리나라 좋은나라</div>
+        <div><span class="red big italic">우</span>리나라 좋은나라</div>
+        
+    </div>
+</body>
+</html>
